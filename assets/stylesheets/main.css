@@ -140,4 +140,19 @@
 
   .nav{
     text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 44px;
+    padding-top: 44px;
+  }
+
+  /*
+  ===========================
+  Footer
+  ===========================
+  */
+
+  .footer{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 44px;
   }
