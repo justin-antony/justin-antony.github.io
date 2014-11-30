@@ -141,8 +141,8 @@
   .nav{
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 44px;
-    padding-top: 44px;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
 
   /*
@@ -154,5 +154,5 @@
   .footer{
     text-align: center;
     text-transform: uppercase;
-    padding-top: 44px;
+    padding-top: 22px;
   }
