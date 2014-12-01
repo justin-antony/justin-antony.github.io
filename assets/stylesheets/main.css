@@ -137,6 +137,12 @@
     padding-top: 50px;
   }
 
+  .center-justified{
+    text-align: justify;
+    margin: 0 auto;
+    width: 30em;
+  }
+
   /*
   ===========================
   Navigation
