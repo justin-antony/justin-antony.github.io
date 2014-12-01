@@ -137,6 +137,10 @@
     padding-top: 50px;
   }
 
+  .main{
+    padding-top: 30px;
+  }
+
   .center-justified{
     text-align: justify;
     margin: 0 auto;
