@@ -52,13 +52,13 @@
   ===========================
   */
 
-  body {
+  html, body {
     color: #888;
-    font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-sarif;
+    font-family: 'Raleway', sans-serif;
   }
 
   h1, h2, h3, h4 {
-    color: #648880;
+    color: #000000;
   }
 
   h1 {
@@ -128,8 +128,13 @@
     width: 960px;
   }
 
-  .main{
+  .main,
+  .about{
     text-align: center;
+  }
+
+  .about{
+    padding-top: 50px;
   }
 
   /*
@@ -142,7 +147,7 @@
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 15px;
   }
 
   /*
@@ -154,5 +159,5 @@
   .footer{
     text-align: center;
     text-transform: uppercase;
-    padding-top: 22px;
+    padding-top: 65px;
   }
