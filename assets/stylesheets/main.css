@@ -134,17 +134,27 @@
   }
 
   .about{
-    padding-top: 50px;
+    padding-top: 30px;
   }
 
   .main{
     padding-top: 30px;
   }
 
-  .center-justified{
-    text-align: justify;
+  .center{
+    text-align: center;
     margin: 0 auto;
     width: 30em;
+  }
+
+  .img-circle{
+    max-width: 20em;
+    max-height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    padding-bottom: 30px;
   }
 
   /*
@@ -169,5 +179,5 @@
   .footer{
     text-align: center;
     text-transform: uppercase;
-    padding-top: 65px;
+    padding-top: 35px;
   }
