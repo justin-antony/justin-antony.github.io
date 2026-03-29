@@ -1,0 +1,34 @@
+name: Convert and Link Markdown
+
+on:
+  push:
+    paths:
+      - 'posts/*.md' # Adjust this to the folder where you keep your markdown
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetches all history so we can see which files changed
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
+
+      - name: Run Conversion and Update Index
+        run: python3 scripts/postScript.py
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Automated update: converted md and updated links" || echo "No changes"
+          git push
