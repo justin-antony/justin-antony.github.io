@@ -23,7 +23,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y pandoc
 
       - name: Install Beautiful Soup
-        run: sudo apt-get install -y python3-bs4
+        run: python3 pip3 install bs4
 
       - name: Run Conversion and Update Index
         run: python3 scripts/postScript.py
