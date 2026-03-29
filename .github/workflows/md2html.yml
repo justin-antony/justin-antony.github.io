@@ -1,4 +1,4 @@
-name: Convert and Link Markdown
+name: convert-and-Link-markdown
 
 on:
   push:
