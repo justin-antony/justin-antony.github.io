@@ -34,12 +34,12 @@ def convert_and_link():
         shutil.move(pandoc_input, md_destination)
 
         #3. Add new html file to link index
-        links.append(f'<li><a href="{html_loc}">{name_root.replace("-", " ").title()}</a></li>')
-        print(links)
-        print('\n')
+        # links.append(f'<li><a href="{html_loc}">{name_root.replace("-", " ").title()}</a></li>')
+        # print(links)
+        # print('\n')
 
     #4. Update the posts html page
-    update_posts(links)
+    # update_posts(links)
 
 def update_posts(new_links):
     
